@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Button, SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { AuthContext } from '../../contexts/AuthContext';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -20,7 +20,7 @@ const Dashboard = () => {
       table: Number(number)
     })
     //console.log(response.data)
-    //precisa fazer a requisição
+    
     navigation.navigate('Order', { number: number, order_id: response.data.id })
     setNumber('') 
   }
@@ -28,21 +28,27 @@ const Dashboard = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-        <Text style={styles.title}>Novo Pedido</Text>
+  <View style={styles.logoutContainer}>
+    <TouchableOpacity style={styles.logoutButton} onPress={signOut}>
+      <Text style={styles.logoutText}>Logout</Text>
+    </TouchableOpacity>
+  </View>
 
-        <TextInput 
-        placeholder='Numero da mesa' 
-        placeholderTextColor='#F0F0F0'
-        keyboardType='numeric'
-        value={number}
-        onChangeText={setNumber}
-        style={styles.input}
-        />
-        
-        <TouchableOpacity style={styles.button} onPress={openOrder}>
-          <Text style={styles.buttonText}>Abrir mesa</Text>
-        </TouchableOpacity>
-    </SafeAreaView>
+  <Text style={styles.title}>New Order</Text>
+
+  <TextInput 
+    placeholder='number' 
+    placeholderTextColor='#F0F0F0'
+    keyboardType='numeric'
+    value={number}
+    onChangeText={setNumber}
+    style={styles.input}
+  />
+  
+  <TouchableOpacity style={styles.button} onPress={openOrder}>
+    <Text style={styles.buttonText}>Open Order</Text>
+  </TouchableOpacity>
+</SafeAreaView>
   )
 }
 
@@ -52,28 +58,28 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     paddingVertical:15,
-    backgroundColor: '#1d1d2e',
+    backgroundColor: '#ffb7c1',
   },
   title:{
     fontSize: 30,
     fontWeight: 'bold',
-    color: '#FFF',
+    color: '#4e2806',
     marginBottom: 24,
   },
   input:{
     width: '90%',
     height: 60,
-    backgroundColor: '#101026',
+    backgroundColor: '#E8F0FE',
     borderRadius: 4,
     paddingHorizontal: 8,
     textAlign: 'center',
     fontSize: 22,
-    color: '#FFF'
+    color: '#4e2806'
   },
   button:{
     width: '90%',
     height: 40,
-    backgroundColor: '#3fffa3',
+    backgroundColor: '#03a3d8',
     borderRadius: 4,
     marginVertical: 12,
     justifyContent: 'center',
@@ -81,9 +87,26 @@ const styles = StyleSheet.create({
   },
   buttonText:{
     fontSize:18,
-    color: '#101026',
+    color: '#FFF',
     fontWeight: 'bold'
-  }
+  },
+  logoutContainer: {
+    position: 'absolute',
+    top: 40,
+    right: 20,
+  },
+  logoutButton: {
+    backgroundColor: '#4e2806',
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 4,
+  },
+  logoutText: {
+    color: '#FFF',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  
 })
 
 export default Dashboard;

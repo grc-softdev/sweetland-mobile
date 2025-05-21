@@ -28,22 +28,22 @@ const FinishOrder = () => {
             navigation.popToTop()
 
         } catch(err){
-            console.log('Erro ao finalizar')
+            console.log('error to finish')
         }
     }
   return (
     <View style={styles.container}>
         <Text style={styles.alert}>
-        Você deseja finalizar esse pedido?
+        Do you want finish your order? 
         </Text>
         <Text style={styles.title}>
-        Mesa {route.params?.number}
+        Table {route.params?.number}
         </Text>
         <TouchableOpacity style={styles.button} onPress={handleFinish}>
             <Text style={styles.textButton}>
-                Finalizar Pedido
+                Finish Order
             </Text>
-            <Feather name='shopping-cart' size={20} color='#1d1d2e'/>
+            <Feather name='shopping-cart' size={20} color='#FFF'/>
         </TouchableOpacity>
     </View>
   )
@@ -52,7 +52,7 @@ const FinishOrder = () => {
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: '#1d1d2e',
+        backgroundColor: '#F7E9EC',
         paddingVertical: '5%',
         paddingHorizontal: '4%',
         alignItems: 'center',
@@ -60,18 +60,18 @@ const styles = StyleSheet.create({
     },
     alert:{
         fontSize: 20,
-        color: '#FFF',
+        color: '#4e2806',
         fontWeight: 'bold',
         marginBottom: 12,
     },
     title:{
         fontSize: 30,
         fontWeight: 'bold',
-        color: '#FFF',
+        color: '#4e2806',
         marginBottom: 12
     },
     button:{
-        backgroundColor: '#3fffa3',
+        backgroundColor: '#03a3d8',
         flexDirection: 'row',
         width: '65%',
         height: 40,
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         marginRight: 18,
         fontWeight: 'bold',
-        color: '#1d1d2e'
+        color: '#FFF'
     }
 })
 

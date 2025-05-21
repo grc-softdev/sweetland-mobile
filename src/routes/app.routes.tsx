@@ -36,9 +36,9 @@ const AppRoutes = () => {
         options={{
           title: "Finalizando",
           headerStyle: {
-            backgroundColor: "#1d1d2e",
+            backgroundColor: "#F7E9EC",
           },
-          headerTintColor: "#FFF",
+          headerTintColor: "#4e2806",
         }}
       />
     </Stack.Navigator>

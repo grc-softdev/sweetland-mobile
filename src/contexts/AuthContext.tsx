@@ -49,11 +49,11 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 
   useEffect(() => {
     const getUser = async () => {
-      //Pegar os dados salvos do user
+      //get users data
       const userInfo = await AsyncStorage.getItem("@pizzaria");
       let hasUser: UserProps = JSON.parse(userInfo || "{}");
 
-      // Verificar se recebemos as informações
+      //verify information received
       if (Object.keys(hasUser).length > 0) {
         api.defaults.headers.common[
           "Authorization"

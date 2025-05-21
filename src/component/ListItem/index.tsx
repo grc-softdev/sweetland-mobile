@@ -21,7 +21,7 @@ return (
     <View style={styles.container}>
        <Text style={styles.item}>{data.amount} - {data.name}</Text>
     <TouchableOpacity onPress={handleDeleteItem}>
-        <Feather name="trash-2" color='#FF3F4b' size={23} />
+        <Feather name="trash-2" color='#FFF' size={23} />
     </TouchableOpacity>
     </View>
 )
@@ -29,7 +29,7 @@ return (
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: '#101026',
+        backgroundColor: '#a01580',
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
@@ -42,6 +42,9 @@ const styles = StyleSheet.create({
         borderColor: '#8a8a'
     },
     item:{
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'space-evenly',
         color: '#FFF'
     }
 }) 
