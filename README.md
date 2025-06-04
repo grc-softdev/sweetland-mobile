@@ -13,13 +13,13 @@ A simple React Native mobile app that allows waiters to take customer orders and
 ## 🧪 How It Works
 
 1. **Login screen**  
-   ![Login Screen](public/sweetland.png)
+   ![Login Screen](assets/sweetland.png)
 
 2. **Enter table number**  
-   ![Table Number Screen](public/openOrder.png)
+   ![Table Number Screen](assets/openOrder.png)
 
 3. **Select products by category**  
-   ![Selected Items](public/itemsOrder.png)
+   ![Selected Items](assets/itemsOrder.png)
 
 4. **Send order to kitchen**  
    - Once confirmed, the selected items and table number are sent to the kitchen system (visible in the desktop version).
