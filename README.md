@@ -1,6 +1,6 @@
 # 📱 Sweetland - mobile
 
-A simple React Native mobile app that allows waiters to take customer orders and send them directly to the kitchen. Built with [Expo](https://expo.dev/), this app is part of a full system integrated with a [desktop version](sweetland-client/README.md) for management.
+A simple React Native mobile app that allows waiters to take customer orders and send them directly to the kitchen. Built with [Expo](https://expo.dev/), this app is part of a full system integrated with a [desktop version](https://github.com/grc-softdev/sweetland-client/edit/main/README.md) for management.
 
 ## 📱 Features
 
