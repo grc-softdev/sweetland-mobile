@@ -19,12 +19,12 @@ A simple React Native mobile app that allows waiters to take customer orders and
 
 2. **Enter table number**
     <p>
-    <img src="public/openOrder.png" alt="Login" width="200px">
+    <img src="public/openOrder.png" alt="order" width="200px">
    </p>
 
 3. **Select products by category**
     <p>
-    <img src="public/itemsOrder.png" alt="Login" width="200px">
+    <img src="public/ItemsOrder.png" alt="itens" width="200px">
    </p>
 
  **Send order to kitchen**  
