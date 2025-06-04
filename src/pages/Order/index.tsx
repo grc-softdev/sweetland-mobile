@@ -192,7 +192,7 @@ export const Order = () => {
           disabled={items.length === 0}
           onPress={handleFinishOrder}
         >
-          <Text style={styles.buttonText}>Avançar</Text>
+          <Text style={styles.buttonText}>Next</Text>
         </TouchableOpacity>
       </View>
 
@@ -234,7 +234,7 @@ export const Order = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F7E9EC",
+    backgroundColor: "#ffb7c1",
     paddingVertical: "5%",
     paddingEnd: "4%",
     paddingStart: "4%",

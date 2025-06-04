@@ -52,7 +52,7 @@ const FinishOrder = () => {
 const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: '#F7E9EC',
+        backgroundColor: '#ffb7c1',
         paddingVertical: '5%',
         paddingHorizontal: '4%',
         alignItems: 'center',

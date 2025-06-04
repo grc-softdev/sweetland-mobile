@@ -19,7 +19,6 @@ const Dashboard = () => {
     const response = await api.post('/order', {
       table: Number(number)
     })
-    //console.log(response.data)
     
     navigation.navigate('Order', { number: number, order_id: response.data.id })
     setNumber('') 

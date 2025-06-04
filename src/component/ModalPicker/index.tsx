@@ -1,6 +1,6 @@
 import React from 'react'
 import { Dimensions, ScrollView, StyleSheet, TouchableOpacity, View } from 'react-native'
-import { Text } from 'react-native-svg'
+import { Text } from 'react-native'
 import { CategoryProps } from '../../pages/Order'
 
 type ModalPicker = {

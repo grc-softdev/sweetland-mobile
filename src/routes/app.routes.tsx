@@ -34,9 +34,9 @@ const AppRoutes = () => {
         name="FinishOrder"
         component={FinishOrder}
         options={{
-          title: "Finalizando",
+          title: "Finishing",
           headerStyle: {
-            backgroundColor: "#F7E9EC",
+            backgroundColor: "#ffb7c1",
           },
           headerTintColor: "#4e2806",
         }}
