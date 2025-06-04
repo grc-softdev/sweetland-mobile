@@ -13,18 +13,18 @@ A simple React Native mobile app that allows waiters to take customer orders and
 ## 🧪 How It Works
 
 1. **Login screen**
-   <p align="center">
-    <img src="public/sweetland.png" alt="Login" width="400px">
+   <p>
+    <img src="public/sweetland.png" alt="Login" width="400px" height="200px">
    </p>
 
 2. **Enter table number**
-    <p align="center">
-    <img src="public/openOrder.png" alt="Login" width="400px">
+    <p>
+    <img src="public/openOrder.png" alt="Login" width="400px" height="200px">
    </p>
 
 3. **Select products by category**
- <p align="center">
-    <img src="public/itemsOrder.png" alt="Login" width="400px">
+ <p>
+    <img src="public/itemsOrder.png" alt="Login" width="400px" height="200px">
    </p>
 
  **Send order to kitchen**  
